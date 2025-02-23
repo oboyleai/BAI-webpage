@@ -1,0 +1,191 @@
+:root {
+  --primary-color: #007BFF;
+  --dark-color: #1C1C1C;
+  --light-bg: #F5F5F5;
+  --white: #FFFFFF;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--white);
+  color: var(--dark-color);
+}
+
+/* HEADER STYLES */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--white);
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+/* HERO SECTION (NEW LAYOUT) */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color); /* For that bold color block. Change if you like */
+  padding: 3rem 2rem; /* Add top/bottom (3rem) and side (2rem) padding */
+  min-height: 80vh;   /* Keep it tall to mimic the reference screenshot */
+  box-sizing: border-box;
+  color: var(--white);
+}
+.hero-content {
+  flex: 1; 
+  /* max-width: 50%;  Uncomment if you want an explicit limit */
+}
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.coming-soon {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  /* Optionally different color: e.g., var(--white) or var(--dark-color) */
+}
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.hero-image {
+  max-width: 400px; 
+  width: 100%;
+  height: auto;
+  /* If you want a small "floating" drop shadow or slight rotation:
+     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+     transform: rotate(-5deg);
+  */
+}
+
+/* CTA Button (used in the "Coming Soon / App Preview" section) */
+.cta-button {
+  background-color: var(--dark-color);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.cta-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* FEATURES SECTION */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--light-bg);
+  text-align: center;
+}
+.feature-box {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.feature-box h3 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+/* TEAM SECTION */
+.team {
+  padding: 2rem;
+  text-align: center;
+}
+.team h2 {
+  margin-bottom: 1.5rem;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.team-member {
+  background-color: var(--light-bg);
+  padding: 1rem;
+  border-radius: 8px;
+}
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.team-member h4 {
+  margin-bottom: 0.5rem;
+}
+.team-member p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* VISION / GOALS SECTION */
+.vision {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--white);
+}
+.vision h2 {
+  margin-bottom: 1rem;
+}
+.vision p {
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+}
+
+/* APP COMING SOON / PREVIEW SECTION */
+.app-coming-soon {
+  padding: 2rem;
+  background-color: var(--light-bg);
+  text-align: center;
+}
+.app-coming-soon h2 {
+  margin-bottom: 1rem;
+}
+.mockup {
+  width: 300px;
+  height: 600px;
+  background: #ccc;
+  margin: 1rem auto;
+  border-radius: 24px;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--dark-color);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+footer a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
